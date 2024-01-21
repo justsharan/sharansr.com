@@ -3,7 +3,7 @@ title: Chicken Tikka Masala
 description: A British classic
 date: 2024-01-12
 tags: ["chicken", "indian", "instant pot"]
-preview: /chicken-tikka-masala.jpg
+preview: /chicken-tikka-masala.webp
 ---
 
 - ⏲️ Prep Time: 10 min
@@ -31,7 +31,7 @@ preview: /chicken-tikka-masala.jpg
 
 2. Set the instant pot to sauté mode and add in your butter.
 
-![Butter in](images/chicken-tikka-masala-1.jpg)
+![Butter in](images/chicken-tikka-masala-1.webp)
 
 3. Let the butter melt and then add the onions, garlic, and ginger. The traditional technique is to add the onions first, then add the garlic and ginger so they don't burn, but idgaf and I want my recipe to be easy to execute.
 
