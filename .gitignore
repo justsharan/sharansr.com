@@ -1,2 +1,4 @@
 static/node_modules/
 static/dist/
+.hugo_build.lock
+deploy.sh
