@@ -18,7 +18,8 @@ module.exports = {
       'primary': '#6ee7b7',
       'secondary': '#77a08a',
       'accent': '#789b9f',
-     },     
+      'offwhite': '#d1d5db',
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 }
