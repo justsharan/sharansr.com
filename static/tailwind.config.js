@@ -1,9 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ['../content/*.md', '../layouts/**/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      typography: ({ theme }) => ({
+        scheme: {
+          css: {
+            '--tw-prose-invert-body': theme('colors.text'),
+            '--tw-prose-invert-links': theme('colors.primary')
+          }
+        }
+      })
+    },   
+    colors: {
+      'text': '#f1f2ec',
+      'background': '#0b0b08',
+      'primary': '#d8e08a',
+      'secondary': '#77a08a',
+      'accent': '#789b9f',
+     },     
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }
 
