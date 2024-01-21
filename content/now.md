@@ -11,4 +11,4 @@ Finishing up the final semester of my undergrad; mostly the courses for my stats
 
 The last one's been pretty fun... it's a ton of plant cell culture techniques and some DNA/RNA expression stuff coming later.
 
-Applying to jobs and post-bacc positions to have something to do after graduation. It still hasn't hit me that I'll soon be saying goodbye to my amazing life here and have to move back home :(
+I'm also applying to jobs and post-bacc positions to have something to do after graduation. It still hasn't hit me that I'll soon be saying goodbye to my amazing life here and have to move back home :(
