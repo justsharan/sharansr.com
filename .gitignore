@@ -3,3 +3,4 @@ static/dist/
 .hugo_build.lock
 deploy.sh
 public/
+layouts/partials/head.html

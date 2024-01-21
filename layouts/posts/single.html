@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <link rel="stylesheet" href="/dist/output.css">
+    {{ partial "head.html" . }}
 </head>
 <body class="box-border mx-5 md:max-w-3xl md:mx-auto bg-background">
     <div class="flex justify-between py-3 text-xs font-bold uppercase text-primary">
