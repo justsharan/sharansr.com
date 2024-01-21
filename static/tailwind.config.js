@@ -7,7 +7,8 @@ module.exports = {
         scheme: {
           css: {
             '--tw-prose-invert-body': theme('colors.text'),
-            '--tw-prose-invert-links': theme('colors.primary')
+            '--tw-prose-invert-links': theme('colors.primary'),
+            '--tw-prose-invert-headings': theme('colors.offwhite'),
           }
         }
       })
