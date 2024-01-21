@@ -6,14 +6,14 @@
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="box-border max-w-3xl mx-auto bg-background">
+<body class="box-border mx-5 md:max-w-3xl md:mx-auto bg-background">
     <div class="py-3 text-xs font-bold uppercase text-primary">
-        <a href="/posts">←  All Recipes</a>
+        <a href="/recipes">←  All Recipes</a>
     </div>
     <hr class="text-primary" />
     <h1 class="text-4xl font-extrabold text-center pt-14 text-text">{{ .Title }}</h1>
-    <img class="max-w-2xl mx-auto my-10 rounded-lg" src="{{ .RelPermalink }}images{{ .Params.preview }}" />
-    <main class="box-border w-full leading-snug prose dark:prose-invert prose-scheme max-w-none prose-img:rounded-lg prose-img:aspect-[4/3]">
+    <main class="box-border w-full leading-snug prose dark:prose-invert prose-scheme max-w-none md:prose-img:max-w-2xl prose-img:mx-auto prose-img:rounded-lg">
+        <img class="my-10" src="{{ .RelPermalink }}images{{ .Params.preview }}" />
         {{ .Content }}
     </main>
     <footer class="my-6 text-xs text-center text-text">
