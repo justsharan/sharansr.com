@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharan</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://kit.fontawesome.com/007c7d7c90.js" crossorigin="anonymous"></script>
+</head>
+<body class="flex max-w-5xl min-h-screen gap-16 p-0 m-0 mx-auto bg-background">
+    <div class="min-h-screen py-20 flex-2">
+        <h1 class="text-3xl font-extrabold uppercase text-primary">Sharan</h1>
+        <p class="mt-2 w-80 text-text">UBC undergrad interested in bioinformatics, computational biology, and statistics.</p>
+        <ul class="flex flex-row gap-5 mt-5 text-2xl text-primary">
+            <li><a href="https://discord.com/invite/PMzqbaVEsH"><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href="https://github.com/justsharan"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://youtube.com/@biologywithsharan"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        <ul class="[&>*]:my-2 text-lg text-text font-semibold my-10">
+            <li><a href="/">Home</a></li>
+            <li><a href="/now">Now</a></li>
+            <li><a href="/posts">Posts</a></li>
+            <li><a href="/recipes">My Recipes</a></li>
+            <li><a href="/movies">Movies</a></li>
+            <li><a href="/books">Books</a></li>
+        </ul>
+    </div>
+    <div class="flex-1 py-20 prose dark:prose-invert prose-scheme">
+        {{ block "main" . }}
+        {{ end }}
+    </div>
+</body>
+</html>
