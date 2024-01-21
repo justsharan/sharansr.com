@@ -1,3 +1,7 @@
+---
+title: Now
+---
+
 Currently working on some plant genomics research at UBC involving variant calling in WGS data from mutagenized flax samples.
 
 Finishing up the final semester of my undergrad; mostly the courses for my stats minor. This is what I'm taking:
