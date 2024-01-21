@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <div class="flex flex-col gap-8">
+        {{ range .Pages }}
+            <a href="{{ .RelPermalink }}">
+                <div>
+                    <h2 class="my-1 text-2xl font-bold text-offwhite">{{ .Title }}</h2>
+                    <img src="{{ .RelPermalink }}images{{ .Params.preview }}" class="object-cover w-full h-full aspect-[4/3] md:rounded-lg" />
+                </div>
+            </a>
+        {{ end }}
+    </div>
+{{ end }}
