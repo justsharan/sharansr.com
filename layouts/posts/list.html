@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <div class="flex flex-col gap-8">
+        {{ range .Pages }}
+            <a href="{{ .RelPermalink }}">
+                <div>
+                    <p class="text-xs font-bold uppercase text-primary"><time datetime='{{ .Date.Format "2006-01-02T15:04:05Z0700" }}'>{{ .Date.Format "Jan 2, 2006" }}</time> • {{ .ReadingTime }} min read</p>
+                    <h2 class="my-1 text-2xl font-bold text-offwhite">{{ .Title }}</h2>
+                    <p class="text-sm leading-snug text-text">{{ .Description }}</p>
+                </div>
+            </a>
+        {{ end }}
+    </div>
+{{ end }}
