@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="box-border mx-5 md:max-w-3xl md:mx-auto bg-background">
+    <div class="flex justify-between py-3 text-xs font-bold uppercase text-primary">
+        <a href="/posts">←  All Movies</a>
+        <p><time datetime='{{ .Date.Format "2006-01-02T15:04:05Z0700" }}'>{{ .Date.Format "Jan 2, 2006" }}</time> • {{ .ReadingTime }} min read</p>
+    </div>
+    <hr class="text-primary" />
+    <header class="max-w-xl mx-auto my-16">
+        <img class="w-full rounded-lg" src="{{ .RelPermalink }}images{{ .Params.preview }}" />
+        <h1 class="mt-5 text-4xl font-extrabold text-text">{{ .Title }}</h1>
+        {{ if .Params.quote }}
+            <blockquote class="pl-3 mt-5 font-serif italic border-l-4 text-text border-primary">{{ .Params.quote }}</blockquote>
+        {{ end }}
+    </header>
+    <main class="box-border w-full prose dark:prose-invert prose-scheme max-w-none md:prose-img:max-w-2xl prose-img:mx-auto prose-img:rounded-lg">
+        {{ .Content }}
+    </main>
+    <footer class="my-6 text-xs text-center text-text">
+        &copy; 2021-{{ dateFormat "2006" now }} Sharan.
+    </footer>
+</body>
+</html>
