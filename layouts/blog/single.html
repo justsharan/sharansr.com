@@ -11,6 +11,7 @@
     <hr class="text-primary" />
     <h1 class="text-4xl font-extrabold text-center py-14 text-text">{{ .Title }}</h1>
     <main class="box-border w-full prose dark:prose-invert prose-scheme max-w-none md:prose-img:max-w-2xl prose-img:mx-auto prose-img:rounded-lg">
+        {{ partial "mathjax.html" . }}
         {{ .Content }}
     </main>
     <footer class="my-6 text-xs text-center text-text">
