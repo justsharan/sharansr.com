@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="box-border mx-5 md:max-w-3xl md:mx-auto bg-background">
+    <div class="flex justify-between py-3 text-xs font-bold uppercase text-primary">
+        <a href="/posts">←  All Posts</a>
+        <p><time datetime='{{ .Date.Format "2006-01-02T15:04:05Z0700" }}'>{{ .Date.Format "Jan 2, 2006" }}</time> • {{ .ReadingTime }} min read</p>
+    </div>
+    <hr class="text-primary" />
+    <h1 class="text-4xl font-extrabold text-center py-14 text-text">{{ .Title }}</h1>
+    <main class="box-border w-full prose dark:prose-invert prose-scheme max-w-none md:prose-img:max-w-2xl prose-img:mx-auto prose-img:rounded-lg">
+        {{ .Content }}
+    </main>
+    <footer class="my-6 text-xs text-center text-text">
+        &copy; 2021-{{ dateFormat "2006" now }} Sharan.
+    </footer>
+</body>
+</html>
