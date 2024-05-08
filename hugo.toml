@@ -1,3 +1,5 @@
 baseURL = 'https://sharansr.com/'
 languageCode = 'en-us'
 title = 'Sharan'
+[params]
+    subtitle = 'UBC undergrad interested in bioinformatics, computational biology, and statistics.'
